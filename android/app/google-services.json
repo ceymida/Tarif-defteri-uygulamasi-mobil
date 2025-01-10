@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "861601764785",
+    "project_id": "deneme-70f6f",
+    "storage_bucket": "deneme-70f6f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:861601764785:android:9a9a3a1688e62fdd829990",
+        "android_client_info": {
+          "package_name": "com.deneme.hafta5"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCN4SgdIzs6bVsXiLek0a07Ycbevj23-w0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:861601764785:android:ca81aa13fa55b0a6829990",
+        "android_client_info": {
+          "package_name": "com.yourname.hafta5"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCN4SgdIzs6bVsXiLek0a07Ycbevj23-w0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

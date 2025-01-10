@@ -1,0 +1,105 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter pub add firebase_core
+
+## exception
+
+PathExistsException: PathExistsException: Cannot create link, path = '/Users/ceydaunal/development/flutter projects/hafta_5/windows/flutter/ephemeral/.plugin_symlinks/firebase_core' (OS Error: File exists, errno = 17)
+
+```
+#0      _Link.throwIfError (dart:io/link.dart:339:7)
+#1      _Link.createSync (dart:io/link.dart:267:5)
+#2      ForwardingLink.createSync (package:file/src/forwarding/forwarding_link.dart:20:16)
+#3      ForwardingLink.createSync (package:file/src/forwarding/forwarding_link.dart:20:16)
+#4      _createPlatformPluginSymlinks (package:flutter_tools/src/flutter_plugins.dart:985:12)
+#5      createPluginSymlinks (package:flutter_tools/src/flutter_plugins.dart:907:5)
+#6      refreshPluginsList (package:flutter_tools/src/flutter_plugins.dart:1022:5)
+<asynchronous suspension>
+#7      FlutterProject.ensureReadyForPlatformSpecificTooling (package:flutter_tools/src/project.dart:379:5)
+<asynchronous suspension>
+#8      PackagesGetCommand.runCommand (package:flutter_tools/src/commands/packages.dart:383:7)
+<asynchronous suspension>
+#9      FlutterCommand.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command.dart:1408:27)
+<asynchronous suspension>
+#10     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:153:19)
+<asynchronous suspension>
+#11     CommandRunner.runCommand (package:args/command_runner.dart:212:13)
+<asynchronous suspension>
+#12     FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:420:9)
+<asynchronous suspension>
+#13     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:153:19)
+<asynchronous suspension>
+#14     FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:364:5)
+<asynchronous suspension>
+#15     run.<anonymous closure>.<anonymous closure> (package:flutter_tools/runner.dart:130:9)
+<asynchronous suspension>
+#16     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:153:19)
+<asynchronous suspension>
+#17     main (package:flutter_tools/executable.dart:93:3)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 3.24.3, on macOS 14.6.1 23G93 darwin-arm64, locale tr-TR)
+    • Flutter version 3.24.3 on channel stable at /Users/ceydaunal/development/flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision 2663184aa7 (5 weeks ago), 2024-09-11 16:27:48 -0500
+    • Engine revision 36335019a8
+    • Dart version 3.5.3
+    • DevTools version 2.37.3
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 35.0.0)
+    • Android SDK at /Users/ceydaunal/Library/Android/sdk
+    • Platform android-35, build-tools 35.0.0
+    • Java binary at: /Applications/Android Studio.app/Contents/jbr/Contents/Home/bin/java
+    • Java version OpenJDK Runtime Environment (build 17.0.11+0-17.0.11b1207.24-11852314)
+    • All Android licenses accepted.
+
+[!] Xcode - develop for iOS and macOS (Xcode 15.0.1)
+    • Xcode at /Users/ceydaunal/Desktop/Xcode.app/Contents/Developer
+    • Build 15A507
+    ✗ CocoaPods not installed.
+        CocoaPods is a package manager for iOS or macOS platform code.
+        Without CocoaPods, plugins will not work on iOS or macOS.
+        For more info, see https://flutter.dev/to/platform-plugins
+      For installation instructions, see https://guides.cocoapods.org/using/getting-started.html#installation
+
+[✓] Chrome - develop for the web
+    • Chrome at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+[✓] Android Studio (version 2024.1)
+    • Android Studio at /Applications/Android Studio.app/Contents
+    • Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    • Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    • Java version OpenJDK Runtime Environment (build 17.0.11+0-17.0.11b1207.24-11852314)
+
+[✓] VS Code (version 1.94.2)
+    • VS Code at /Applications/Visual Studio Code.app/Contents
+    • Flutter extension version 3.98.0
+
+[✓] VS Code (version 1.87.0)
+    • VS Code at /Users/ceydaunal/Downloads/Visual Studio Code.app/Contents
+    • Flutter extension version 3.98.0
+
+[✓] VS Code (version 1.87.0)
+    • VS Code at /Users/ceydaunal/QtProjects/Downloads/Visual Studio Code.app/Contents
+    • Flutter extension version 3.98.0
+
+[✓] Connected device (4 available)
+    • iPhone 15 Pro Max (mobile)      • 6995CF07-901F-4E63-8487-96464A74BD0F • ios            • com.apple.CoreSimulator.SimRuntime.iOS-17-0 (simulator)
+    • macOS (desktop)                 • macos                                • darwin-arm64   • macOS 14.6.1 23G93 darwin-arm64
+    • Mac Designed for iPad (desktop) • mac-designed-for-ipad                • darwin         • macOS 14.6.1 23G93 darwin-arm64
+    • Chrome (web)                    • chrome                               • web-javascript • Google Chrome 119.0.6045.199
+
+[!] Network resources
+    ✗ A network error occurred while checking "https://github.com/": Failed host lookup: 'github.com'
+
+! Doctor found issues in 2 categories.
+```
